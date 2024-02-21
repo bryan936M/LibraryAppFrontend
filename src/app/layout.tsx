@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Nav from "@/components/Nav";
+import { ThemeProvider } from "@/components/Providers/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +15,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className="">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Nav />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
