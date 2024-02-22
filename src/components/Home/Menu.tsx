@@ -14,7 +14,7 @@ const links = [
 const Menu = (props: Props) => {
   return (
     <div className="md:w-1/5 ">
-      <div className="flex flex-col md:items-center h-screen">
+      <div className="flex flex-col md:items-center">
         <div className="flex flex-col md:items-center">
           <div className="flex flex-col md:items-center mt-5">
             {links.map((link, index) => (

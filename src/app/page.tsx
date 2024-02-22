@@ -4,12 +4,12 @@ import Main from "@/components/Home/Main";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full p-3">
+    <main className="flex w-full p-3">
       {/* Menu side */}
       <Menu />
       <div className="flex-1 flex">
         {/* Main Section */}
-        <Main />
+        <Main />  
 
         {/* Trending section */}
         <Trending />
