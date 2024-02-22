@@ -4,7 +4,11 @@ type Props = {}
 
 const Main = (props: Props) => {
   return (
-    <div>Main</div>
+    <div>
+      {/* Selection bar */}
+      {/* Book listing */}
+      {/* Reading list */}
+    </div>
   )
 }
 
