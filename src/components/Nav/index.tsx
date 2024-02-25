@@ -19,18 +19,18 @@ type Props = {};
 const Nav = (props: Props) => {
   const { setTheme } = useTheme();
   return (
-    <div className="flex justify-between p-3">
+    <div className="flex justify-between p-1">
       <div className="flex space-x-20 items-center md:justify-around md:flex-1">
         <Link href="/" className="flex min-w-fit items-center space-x-5">
           <Avatar>
             <AvatarImage src="https://icon-library.com/images/photo-library-icon/photo-library-icon-3.jpg" />
             <AvatarFallback>Logo</AvatarFallback>
           </Avatar>
-          <p className="font-bold min-w-fit">E-Book</p>
+          <p className="hidden md:block font-bold min-w-fit">E-Book</p>
         </Link>
         <Input type="text" placeholder="Search" className="md:w-1/2" />
       </div>
-      <div className="flex p-5 space-x-2">
+      <div className="flex p-5 md:p-1 space-x-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon">
