@@ -7,12 +7,14 @@ export default function Home() {
     <main className="bg-slate-100 w-full flex-1 flex ">
       {/* Menu side */}
       <Menu />
-      <div className="flex-1 flex">
-        {/* Main Section */}
-        <Main />
+      <div className="flex-1 m-5 ">
+        <div className="flex flex-col md:flex-row md:justify-between gap-5 md:h-full">
+          {/* Main Section */}
+          <Main />
 
-        {/* Trending section */}
-        <Trending />
+          {/* Trending section */}
+          <Trending />
+        </div>
       </div>
     </main>
   );
